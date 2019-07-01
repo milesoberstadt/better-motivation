@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "BetterMotivation",
+  "description": "Replaces LinkedIn videos with Shai Labeouf",
+  "version": "0.1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://linkedin.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
