@@ -1,12 +1,13 @@
 let originalVideos = [];
 let restoredVideos = [];
+let replacementUrl = '//www.youtube.com/embed/ZXsQAXx_ao0';
 setInterval(() => {
     const elements = document.querySelectorAll('.feed-shared-linkedin-video');
     for (let e of elements) {
         if (restoredVideos.includes(e))
             continue;
         originalVideos.push(e);
-        const replacement = htmlToElement(`<div class="replacement-video" ><iframe width="552" height="548" src="//www.youtube.com/embed/ZXsQAXx_ao0" frameborder="0" allowfullscreen></iframe><a href="#" class="restore-video-link" data-restore-index="${originalVideos.length - 1}">Show original video</a></div>`)
+        const replacement = htmlToElement(`<div class="replacement-video" ><iframe width="552" height="548" src="${replacementUrl}" frameborder="0" allowfullscreen></iframe><a href="#" class="restore-video-link" data-restore-index="${originalVideos.length - 1}">Show original video</a></div>`)
         e.parentNode.replaceChild(replacement, e);
     }
     const links = document.querySelectorAll('.restore-video-link');

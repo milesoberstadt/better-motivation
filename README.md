@@ -8,4 +8,6 @@ I recently went through the process of hunting for a new job, meaning that I was
 
 Instead of just blocking this content, I decided I could make something better. Something that reminded me to smile and to keep me moving through my search, as unpleasant as it was. I was bored and needed some kind of distraction from the grind of job hunting, so I made this.
 
+It was a really fun excuse for writing a Chrome Extension, something I had been meaning to try for a while. 
+
 [comparison]: https://raw.githubusercontent.com/milesoberstadt/better-motivation/master/comparison.png "Comparison of before / after Better Motivation Extension"
